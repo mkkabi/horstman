@@ -1,6 +1,4 @@
-
 package studyhortsman;
-
 
 import java.util.*;
 import java.lang.reflect.*;
@@ -60,7 +58,7 @@ try
          String modifiers = Modifier.toString(c.getModifiers());
          if (modifiers.length() > 0) System.out.print(modifiers + " ");
          System.out.print(name + "(");
- // print parameter types
+        // print parameter types
          Class[] paramTypes = c.getParameterTypes();
          for (int j = 0; j < paramTypes.length; j++)
          {
@@ -81,12 +79,12 @@ try
       {
          Class retType = m.getReturnType();
          String name = m.getName();
- System.out.print("   ");
+         System.out.print("   ");
          // print modifiers, return type, and method name
          String modifiers = Modifier.toString(m.getModifiers());
          if (modifiers.length() > 0) System.out.print(modifiers + " ");
          System.out.print(retType.getName() + " " + name + "(");
- // print parameter types
+         // print parameter types
          Class[] paramTypes = m.getParameterTypes();
          for (int j = 0; j < paramTypes.length; j++)
          {

@@ -1,16 +1,20 @@
+// посмотреть есть ли тут еще примеры Хорстмана https://github.com/czkct/java
+a
+
+package studyhortsman;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-package studyhortsman;
 
 /**
  *
  * @author matt
  */
-public class StudyHortsman {
+public class Main {
 
     /**
      * @param args the command line arguments
