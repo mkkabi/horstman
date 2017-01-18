@@ -1,5 +1,4 @@
 // посмотреть есть ли тут еще примеры Хорстмана https://github.com/czkct/java
-a
 
 package studyhortsman;
 
