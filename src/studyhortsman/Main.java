@@ -1,4 +1,6 @@
 // посмотреть есть ли тут еще примеры Хорстмана https://github.com/czkct/java
+// https://github.com/mthli/Java/blob/master/CoreJava/v1ch06/interfaces/EmployeeSortTest.java
+
 
 package studyhortsman;
 

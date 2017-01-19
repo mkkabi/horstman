@@ -12,26 +12,8 @@ package studyhortsman;
 public class Interfaces {
     public static void main (String[] args)
     {
-    Employee emp1 = new Employee(25, "emp 1");
-    Employee emp2 = new Employee(30, "emp 2");
+    Employee emp1 = new Employee("emp 1", 20);
+    Employee emp2 = new Employee("emp 2", 30);
     System.out.println(emp1.compareTo (emp2));
     }
-}
-class Employee implements Comparable<Employee> {
-int salary;
-String name;
-
-    public Employee(int salary, String name) {
-        this.salary = salary;
-        this.name = name;
-    }
-
-    @Override
-    public int compareTo(Employee other) {
-        //Employee other = (Employee) o;
-        if (salary < other.salary) return -1;
-        if (salary > other.salary) return 1;
-        return 0;
-    }
-
 }
