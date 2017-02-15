@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package interfaces;
 
 import java.awt.*;
@@ -19,44 +15,62 @@ import java.awt.*;
 public class InnerClassTest
 {
  public static void main (String[] args) {
-TalkingClock clock = new TalkingClock(1000, true);
-clock.start();
- //Программа выполняется до тех пор г пока .........
- // пользователь нещелкнет на кнопке ОК.
+  TalkingClock clock = new TalkingClock(1000, true);
+  clock.start();
+ //Программа выполняется до тех пор г пока 
+ // пользователь не щелкнет на кнопке ОК.
+     
  JOptionPane.showMessageDialog(null, "Завершить программу?");
  System.exit(0);
    }
  }
 
-/*
- * Часы, выводящие информацию о времени через
- * заданный интервал.
- */
+
+// Часы, выводящие информацию о времени через заданный интервал.
+
 class TalkingClock {
  /*
- * Конструирует "говорящие часы11
  * @param interval Интервал в миллисекундах между сообщениями
  * @param beep Значение true включает звуковой сигнал
  */
 private int interval;
 private boolean beep;
- public TalkingClock(int interval, boolean beep) {
+
+public TalkingClock(int interval, boolean beep) {
  this.interval = interval;
  this.beep = beep;
 }
+public static void echoCho (){
+    System.out.println("asdf asdf asdf asdf asdfasdf ");
+}
 // Запускает часы.
 public void start(){
-ActionListener listener = new TimePrinter();
+//ActionListener listener = new MyClassTest();
+  ActionListener listener = new ActionListener(){
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Звонок, время: " + new Date()) ;
+            if (beep) Toolkit.getDefaultToolkit().beep();
+        }
+    TalkingClock.echoCho();
+    };
 Timer t = new Timer (interval, listener);
 t.start();
+echoCho();
 }
 
-private class TimePrinter implements ActionListener {
- public void actionPerformed (ActionEvent event)
- {
- Date now = new Date() ;
- System.out.println("Звонок, время: " + now) ;
- if (beep) Toolkit.getDefaultToolkit().beep();
-    }
-  }
+//public class MyClassTest implements ActionListener{
+//        @Override
+//        public void actionPerformed(ActionEvent e) {
+//            System.out.println("test test");
+//        }
+//}
+//
+//private class TimePrinter implements ActionListener {
+// public void actionPerformed (ActionEvent event)
+// {
+// System.out.println("Звонок, время: " + new Date()) ;
+// if (beep) Toolkit.getDefaultToolkit().beep();
+//    }
+//  }
 }
