@@ -46,26 +46,17 @@ public static void echoCho (){
 // Запускает часы.
 public void start(){
 //ActionListener listener = new MyClassTest();
-  ActionListener listener = new ActionListener(){
+  
+Timer t = new Timer (interval, new ActionListener(){
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Звонок, время: " + new Date()) ;
-            if (beep) Toolkit.getDefaultToolkit().beep();
-        }
-    TalkingClock.echoCho();
-    };
-Timer t = new Timer (interval, listener);
+            if (beep) Toolkit.getDefaultToolkit().beep();   
+    }
+    });
 t.start();
-echoCho();
 }
 
-//public class MyClassTest implements ActionListener{
-//        @Override
-//        public void actionPerformed(ActionEvent e) {
-//            System.out.println("test test");
-//        }
-//}
-//
 //private class TimePrinter implements ActionListener {
 // public void actionPerformed (ActionEvent event)
 // {
