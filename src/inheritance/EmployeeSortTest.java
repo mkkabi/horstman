@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package studyhortsman;
+package inheritance;
 
 import java.util.*;
 

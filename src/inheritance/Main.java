@@ -2,7 +2,7 @@
 // https://github.com/mthli/Java/blob/master/CoreJava/v1ch06/interfaces/EmployeeSortTest.java
 
 
-package studyhortsman;
+package inheritance;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
