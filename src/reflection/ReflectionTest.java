@@ -1,4 +1,4 @@
-package inheritance;
+package reflection;
 
 import java.util.*;
 import java.lang.reflect.*;

@@ -12,8 +12,8 @@ package inheritance;
 public class Interfaces {
     public static void main (String[] args)
     {
-    Employee emp1 = new Employee("emp 1", 20);
-    Employee emp2 = new Employee("emp 2", 30);
-    System.out.println(emp1.compareTo (emp2));
+    Employee emp1 = new Employee("emp 1", 200, 1980, 11, 15);
+    Employee emp2 = new Employee("emp 2", 300, 1980, 11, 15);
+    //System.out.println(emp1.compareTo(emp2));
     }
 }

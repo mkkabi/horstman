@@ -19,9 +19,9 @@ public class EmployeeSortTest
    {
       Employee[] staff = new Employee[3];
 
-      staff[0] = new Employee("Harry Hacker", 35000);
-      staff[1] = new Employee("Carl Cracker", 75000);
-      staff[2] = new Employee("Tony Tester", 38000);
+      staff[0] = new Employee("Harry Hacker", 35000, 1980, 11, 15);
+      staff[1] = new Employee("Carl Cracker", 75000, 1980, 11, 15);
+      staff[2] = new Employee("Tony Tester", 38000, 1980, 11, 15);
 
       Arrays.sort(staff);
 
